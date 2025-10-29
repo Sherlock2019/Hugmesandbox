@@ -1,0 +1,69 @@
+{
+  "💳 Credit Appraisal Agent": {
+    "version": "1.4",
+    "rating": 4.8,
+    "users": 12,
+    "comments": [
+      "Praise: Extremely accurate loan approval explanations!",
+      "Feature Request: Please add multi-currency support for ASEAN banks.",
+      "Bug Report: Sometimes misreads employment_length column from CSV.",
+      "Feature Request: Allow retraining with anonymized data directly."
+    ]
+  },
+  "🏦 Asset Appraisal Agent": {
+    "version": "1.1",
+    "rating": 4.5,
+    "users": 8,
+    "comments": [
+      "Feature Request: Add API link to local land registry for collateral validation.",
+      "Praise: Works fast with property market data.",
+      "Feature Request: Add auto-sync with credit appraisal model outputs."
+    ]
+  },
+  "🩺 Claims Triage Agent": {
+    "version": "1.0",
+    "rating": 4.2,
+    "users": 5,
+    "comments": [
+      "Feature Request: Add fraud detection scoring.",
+      "Praise: Great for automating simple health insurance claims."
+    ]
+  },
+  "📈 Sales Forecast Agent": {
+    "version": "1.0",
+    "rating": 4.6,
+    "users": 7,
+    "comments": [
+      "Feature Request: Allow seasonal trend adjustment.",
+      "Praise: Helps predict campaign impact precisely."
+    ]
+  },
+  "🔋 EV Battery Health Agent": {
+    "version": "1.0",
+    "rating": 4.4,
+    "users": 4,
+    "comments": [
+      "Feature Request: Include temperature impact metrics.",
+      "Praise: Nice visualization of degradation rate."
+    ]
+  },
+  "🔐 SecOps Log Triage": {
+    "version": "1.0",
+    "rating": 4.3,
+    "users": 6,
+    "comments": [
+      "Feature Request: Add live alert correlation between firewall and SIEM logs.",
+      "Praise: Helps reduce alert fatigue!"
+    ]
+  },
+  "⚖️ Contract Analyzer": {
+    "version": "1.0",
+    "rating": 4.7,
+    "users": 9,
+    "comments": [
+      "Feature Request: Vietnamese language clause parsing.",
+      "Praise: Excellent clause extraction accuracy.",
+      "Bug Report: Occasionally misses indemnity clause in nested documents."
+    ]
+  }
+}
