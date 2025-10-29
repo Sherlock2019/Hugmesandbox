@@ -5,7 +5,7 @@ set -euo pipefail
 # CONFIG
 # ─────────────────────────────
 REPO_PATH="${REPO_PATH:-$HOME/credit-appraisal-agent-poc}"
-REMOTE_URL="https://github.com/Sherlock2019/credit-appraisal-agent-poc.git"
+REMOTE_URL_SSH="git@github.com:Sherlock2019/credit-appraisal-agent-poc.git"
 BRANCH="${BRANCH:-main}"
 DATE_TODAY=$(date +"%Y-%m-%d")
 TMP_FILE="/tmp/git_today_changes.txt"
@@ -31,7 +31,7 @@ cat "$TMP_FILE"
 echo "──────────────────────────────"
 
 # ─────────────────────────────
-# ADD AND COMMIT
+# ADD + COMMIT
 # ─────────────────────────────
 while read -r file; do
     git add "$file"
@@ -43,10 +43,10 @@ echo "💬 Commit message: $COMMIT_MSG"
 git commit -m "$COMMIT_MSG" || echo "⚠️ No changes staged (maybe already committed)."
 
 # ─────────────────────────────
-# PUSH
+# PUSH VIA SSH
 # ─────────────────────────────
-git remote set-url origin "$REMOTE_URL"
-echo "🔗 Remote set to: $REMOTE_URL"
+echo "🔗 Setting remote to SSH: $REMOTE_URL_SSH"
+git remote set-url origin "$REMOTE_URL_SSH"
 
 echo "⬆️ Pushing to branch: $BRANCH ..."
 git push origin "$BRANCH"
